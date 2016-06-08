@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/qmb_home">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#B3000000"
+            >
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/usernameText"
+                android:textColorHint="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/username"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passwordText"
+                android:hint="@string/password"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:layout_marginBottom="10dp"
+                android:ems="13"
+                android:id="@+id/loginButton"
+                android:onClick="loginUser"
+                android:layout_gravity="center_horizontal"
+                android:background="#42A5F5"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/createAccountButton"
+                android:ems="13"
+                android:onClick="createAccount"
+                android:layout_gravity="center_horizontal"
+                android:background="#42A5F5"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_password"
+                android:id="@+id/resetPasswordButton"
+                android:onClick="resetPasswordClickListener"
+                android:ems="13"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="#ab2626"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_reset_link"
+                android:id="@+id/enterResetPasswordButton"
+                android:onClick="openEnterResetLink"
+                android:ems="13"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="#ab2626"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

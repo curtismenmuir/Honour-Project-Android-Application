@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/EventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_title"
+        android:ems="16"
+        android:inputType="text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/EventTitle"
+        android:layout_marginTop="23dp"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/select_date"
+                android:id="@+id/selectDateLabel"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/dateFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar"
+                android:tint="@android:color/white"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/empty_date"
+                android:id="@+id/selectDateLabel2"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/select_start_time"
+                android:id="@+id/selectStartTimeLabel"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/startTimeFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock_start"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/empty_time"
+                android:id="@+id/selectStartTimeLabel2"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/select_end_time"
+                android:id="@+id/selectEndTimeLabel"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/endTimeFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock_end"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/empty_time"
+                android:id="@+id/selectEndTimeLabel2"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="16"
+        android:id="@+id/EventDescription"
+        android:lines="6"
+        android:hint="@string/event_description"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="confirmEvent"
+        android:text="@string/confirm_event"
+        android:id="@+id/confirmEventButton"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/EventDescription"
+        android:layout_alignStart="@+id/EventDescription"
+        android:layout_alignEnd="@+id/EventDescription"
+        android:textSize="28dp" />
+
+</RelativeLayout>

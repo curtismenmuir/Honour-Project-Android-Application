@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42A5F5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#42A5F5">
+        <ImageView
+            android:src="@mipmap/blank_user"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:background="#42A5F5"
+            android:id="@+id/otherUserImage"
+            android:contentDescription="User Picture"
+            android:layout_gravity="end"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#42A5F5"
+            android:layout_weight="0.50">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/username"
+                android:id="@+id/ViewUsername"
+                android:textColor="#FFFFFF"
+                android:background="#42A5F5"
+                android:layout_gravity="start"
+                android:paddingTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/users_name"
+                android:id="@+id/UserNameView"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/account_type"
+                android:id="@+id/UserAccountTypeView"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/matric_no"
+                android:id="@+id/UserMatricNoView"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/user_email"
+                android:id="@+id/UserEmailView"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

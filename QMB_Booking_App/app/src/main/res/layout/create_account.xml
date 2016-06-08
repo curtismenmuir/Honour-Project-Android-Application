@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dundee_uni">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#B3000000"
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/usernameEditText"
+                android:hint="@string/username"
+                android:layout_gravity="center_horizontal"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm_-QWERTYUIOPASDFGHJKLZXCVBNM"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_username"
+                android:id="@+id/checkUsernameButton"
+                android:ems="13"
+                android:onClick="checkUsername"
+                android:layout_gravity="center_horizontal"
+                android:background="#42A5F5"
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passwordText"
+                android:hint="@string/password"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passwordRetypeText"
+                android:hint="@string/confirm_password"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/userFirstNameET"
+                android:hint="@string/first_name"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/userLastNameET"
+                android:hint="@string/last_name"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+
+            <Spinner
+                android:id="@+id/accountTypeSpinner"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/account_type"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#ffffff"
+                android:spinnerMode="dropdown"
+                android:dropDownSelector="#ffffff"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/userEmailET"
+                android:hint="@string/email"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/userMatricNoET"
+                android:hint="@string/matric_no_staff_id"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:id="@+id/createAccountButton"
+                android:onClick="createAccount"
+                android:layout_gravity="center_horizontal"
+                android:background="#43bb36"
+                android:textColor="#ffffff"
+                android:ems="13"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

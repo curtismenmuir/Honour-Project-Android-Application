@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">UoD Booking App</string>
+    <string name="qmb">QMB</string>
+    <string name="quick_search">Quick Search</string>
+    <string name="scan_room_code">Scan Room Code</string>
+    <string name="other_string">Other</string>
+    <string name="other_string2">Other 2</string>
+    <string name="ground_floor">Ground Floor</string>
+    <string name="first_floor">First Floor</string>
+    <string name="second_floor">Second Floor</string>
+    <string name="third_floor">Third Floor</string>
+    <string name="wolfson">Wolfson Theatre</string>
+    <string name="room1">Room One</string>
+    <string name="room2">Room Two</string>
+    <string name="room3">Room Three</string>
+    <string name="room_name">Room Name</string>
+    <string name="event_name">Event Name</string>
+    <string name="sign_up">Confirm Attendance</string>
+    <string name="calendar">Calendar</string>
+    <string name="room_info">Sample Room Info.......</string>
+    <string name="event_info">Sample Event Info.......</string>
+    <string name="event_signed_up">Confirmed Attendees:</string>
+    <string name="calendar_today">Today</string>
+    <string name="calendar_day_view">Day View</string>
+    <string name="calendar_three_day_view">3 Day View</string>
+    <string name="calendar_week_view">Week View</string>
+    <string name="attendees">Attendees</string>
+    <string name="select_start_time">Start Time</string>
+    <string name="select_end_time">End Time</string>
+    <string name="select_date">Start Date</string>
+    <string name="empty_date">dd-mm-yyyy</string>
+    <string name="empty_time">--/--</string>
+    <string name="event_description">Event Description</string>
+    <string name="confirm_event">Confirm Event</string>
+    <string name="search">Search</string>
+    <string name="search_room_code">Room Code</string>
+    <string name="search_time_date">Time and Date</string>
+    <string name="advanced_search">Adv. Seatch</string>
+    <string name="buildings">Buildings</string>
+    <string name="building_name">Building Name</string>
+    <string name="room_search">Please enter a Room Code or Room Name</string>
+    <string name="confirm_search">Confirm Search</string>
+    <string name="or">or</string>
+    <string name="users_name">Users Name</string>
+    <string name="matric_no">Matriculation Number</string>
+    <string name="my_account">My Account</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="home">Home</string>
+    <string name="booking_popup">Do you wish to view the booking, or delete the event?</string>
+    <string name="booking_popup_view_booking">View Booking</string>
+    <string name="booking_popup_delete_booking">Delete Booking</string>
+    <string name="confirm_delete_text">Are you sure you wish to delete the event?</string>
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="cancel_delete">Cancel Delete</string>
+    <string name="search_heading">Please enter your Search Details</string>
+    <string name="results">Results</string>
+    <string name="book_or_view">Would you like to view or book the room?</string>
+    <string name="view_room_details">Room Details</string>
+    <string name="book_room">Book Room</string>
+    <string name="booking_extra_details">Please enter a title and description for your event!</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="check_username">Check Username</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="account_type">Account Type</string>
+    <string name="email">Email Address</string>
+    <string name="matricno">Matric No</string>
+    <string name="create_account">Create Account</string>
+    <string name="student">Student</string>
+    <string name="staff">Staff</string>
+    <string name="event_title">Event Title</string>
+    <string name="login">Login</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="my_sign_ups">My Sign Ups</string>
+    <string name="mybookings">My Bookings</string>
+    <string name="email_short">Email</string>
+    <string name="account">Account</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="whiteboard">Whiteboard</string>
+    <string name="projector">Projector</string>
+    <string name="conf_equipment">Conf. Equip</string>
+    <string name="no_seats">No Seats</string>
+    <string name="room_code">Room Code</string>
+    <string name="devices">Devices</string>
+    <string name="mic">Mic</string>
+    <string name="telephone">Telephone</string>
+    <string name="tables">Fixed Tables</string>
+    <string name="building_details">Building Info</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="creator">Creator</string>
+    <string name="user_email">User Email</string>
+    <string name="enter_reset_link">Enter Reset Link</string>
+    <string name="reset_link">Reset Link</string>
+    <string name="enter_password_below">Please enter your new password below!</string>
+    <string name="search_by_room_code">Search by Room Code</string>
+    <string name="search_by_room_name">Search by Room Name</string>
+    <string name="matric_no_staff_id">Matric No / Staff ID</string>
+    <string name="room_id">Room ID</string>
+
+
+    <string-array name="account_types">
+        <item>Staff</item>
+        <item>Student</item>
+    </string-array>
+    <string-array name="account_types_reversed">
+        <item>Student</item>
+        <item>Staff</item>
+    </string-array>
+    <string-array name="whiteboard_options">
+        <item>Blank</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="projctor_options">
+        <item>Blank</item>
+        <item>None</item>
+        <item>Single</item>
+        <item>Double</item>
+    </string-array>
+    <string-array name="conference_equipment_options">
+        <item>Blank</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

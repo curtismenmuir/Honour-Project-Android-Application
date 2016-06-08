@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/booking_extra_details"
+        android:id="@+id/extraBookingDetailsMessage"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/EventTitlePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_title"
+        android:ems="16"
+        android:inputType="text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="16"
+        android:id="@+id/EventDescriptionPopup"
+        android:lines="6"
+        android:hint="@string/event_description"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_booking"
+            android:id="@+id/cancelBookingPopupButton"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_booking"
+            android:id="@+id/confirmBookingPopupButton"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

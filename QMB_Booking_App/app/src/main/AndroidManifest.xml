@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cptdreads.curtis.qmb_booking_app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".UserLogin"
+            android:label="UoDb: Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SelectBuilding"
+            android:label="@string/home">
+        </activity>
+
+        <activity
+            android:name=".SelectFloor">
+        </activity>
+
+        <activity
+            android:name=".SelectRoom">
+        </activity>
+
+        <activity
+            android:name=".RoomView">
+        </activity>
+
+        <activity
+            android:name=".Timetable_Display">
+        </activity>
+
+        <activity
+            android:name=".AddEvent"
+            android:label="New Booking">
+        </activity>
+        <activity
+            android:name=".EventInfo">
+        </activity>
+        <activity
+            android:name=".EventListView"
+            android:label="@string/event_signed_up">
+        </activity>
+        <activity
+            android:name=".SearchRoomCode"
+            android:label="Room Search">
+        </activity>
+        <activity
+            android:name=".SearchTimeDate"
+            android:label="Search: Time and Date">
+        </activity>
+        <activity
+            android:name=".SearchAdvanced"
+            android:label="Advanced Search">
+        </activity>
+        <activity
+            android:name=".MyAccount"
+            android:label="@string/my_account">
+        </activity>
+        <activity
+            android:name=".MyBookings"
+            android:label="My Bookings">
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="Create Account">
+        </activity>
+        <activity
+            android:name=".EnterResetLink"
+            android:label="Reset Password">
+        </activity>
+
+        <activity
+            android:name=".ResetUserPassword">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="qmb_booking_app" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
